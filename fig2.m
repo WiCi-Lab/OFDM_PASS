@@ -66,7 +66,7 @@ h3 = plot(f_subcarriers/1e9, Rp_freq_independent, 'g-^', 'LineWidth', 1.5, 'Disp
 fc_ghz = fc / 1e9;
 current_ylim = ylim;
 line([fc_ghz fc_ghz], current_ylim, 'Color', 'k', 'LineStyle', '--', 'LineWidth', 1);
-label_text = {sprintf('Cutoff frequency:'); sprintf('f_c = %.1f GHz', fc_ghz)};
+label_text = {sprintf('Cutoff frequency:'); sprintf('f_0 = %.1f GHz', fc_ghz)};
 text(fc_ghz*1.005, mean(current_ylim), label_text, 'HorizontalAlignment', 'left', 'FontSize', 10);
 
 xlabel('Subcarrier Frequency (GHz)');
